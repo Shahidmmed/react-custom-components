@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: MTNBrighterSans;
+  src: url(/fonts/MTNBrighterSans-ExtraLight.otf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: MTNBrighterSans;
+  src: url(/fonts/MTNBrighterSans-ExtraLight.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: MTNBrighterSans;
+  src: url(/fonts/MTNBrighterSans-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: MTNBrighterSans;
+  src: url(/fonts/MTNBrighterSans-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: MTNBrighterSans;
+  src: url(/fonts/MTNBrighterSans-RegularItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+$primary-color: #f7ca16;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  color: #000;
+  font-weight: 300;
+
+  * {
+    font-family: MTNBrighterSans !important;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+.datatable {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px !important;
+}
+.table-section {
+  display: block;
+  padding: 20px 4%;
+  align-items: center;
+  margin-top: 15px;
+  background: white;
+}
+.table-section .loader {
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.table-section .custom-table {
+  width: 100%;
+}
+.table-section .custom-table table {
+  width: 100%;
+  border-spacing: 0;
+}
+.table-section .custom-table table tbody tr:hover td {
+  cursor: pointer;
+  background-color: #efefef;
+}
+.table-section .custom-table table tbody tr td {
+  text-align: left;
+  padding: 0 0 0 10px;
+  height: 40px;
+  color: #000;
+  background-color: white;
+  border-bottom: solid 1px #efefef;
+  letter-spacing: 0.5px;
+  font-family: MTNBrighterSans;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+.table-section .custom-table table tbody tr td:first-child {
+  padding-left: 20px;
+}
+
+.table-section .custom-table table tbody tr td .btn-details {
+  padding: 4px 15px !important;
+  background-color: #ffca00;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none !important;
+  cursor: pointer;
+}
+.table-section .custom-table table tbody tr:hover td:first-child {
+  border-left: 5px solid black;
+}
+.table-section .custom-table table tbody tr td .btn-details {
+  padding: 6px 30px;
+}
+.table-section .custom-table table thead th {
+  font-size: 14px;
+  height: 40px;
+  color: #000;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+  position: relative;
+  border-bottom: solid 1px #efefef;
+}
+.table-section .custom-table table thead th:first-child {
+  padding-left: 20px;
+}
+.table-section .custom-table table thead th div {
+  font-family: MTNBrighterSans;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.pagination {
+  margin-top: 20px;
+}
+.pagination {
+  margin-top: 20px;
+}
+.pagination .text-center {
+  display: flex;
+}
+.pagination .text-center .pagination-btn {
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pagination-more {
+  align-items: baseline !important;
+}
+
+.pagination .text-center .pagination-btn.active {
+  background-color: black;
+  color: white;
+}
+.pagination .text-center .next,
+.pagination .text-center .prev {
+  background-color: black;
+  color: white;
+}
